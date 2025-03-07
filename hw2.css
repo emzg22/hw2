@@ -1,0 +1,153 @@
+/*
+Name: Emily Gomez
+    Date created: 2/18/25
+    Date last edited: 3/6/25
+    Version: 2.1
+    Description: CSS code for homework 2
+*/
+
+header {
+    width: 100%;
+    background-color: rgb(255, 244, 240);
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(195,193,194);
+    font-family: "Bodoni Moda";
+    font-weight: bold;
+    margin: 0;
+    height: 100%;
+    min-height: 100vh;
+}
+form {
+    flex-grow: 1;
+}
+h1{/*code using a html tag*/
+    text-align: center;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino , serif;
+    font-weight: bold; 
+    flex-grow: 1;
+    color: rgb(198,73,63);
+}
+/*link code*/
+a:link {
+    text-align: center;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino , serif;
+    font-weight: bold; 
+    font-size:x-large;
+    color: rgb(198,73,63);
+  }
+  a:visited {
+    color: rgb(160, 104, 244, 0.994);
+  }
+  a:hover {
+    color: rgb(251,198,207);
+  }
+  /*footer code*/
+footer {
+    text-align: center;
+    vertical-align: bottom;
+    font-family: "Bodoni Moda";
+    width: 100%;
+    margin-top: auto;
+    font-weight: lighter;
+    background-color: rgb(255, 244, 240);
+}
+/*code for headers using a class*/
+.section-header {
+    background-color: rgb(255, 244, 240);
+    color: rgb(198,73,63);
+    font-size: 20px;
+    width: 10%;
+    align-self: center;
+    padding: .5%;
+    border-radius: 7px;
+}
+/*code for radio buttons in patient info. using names*/
+input[name="gender"] +label, 
+input[name="insurance"] +label,
+input[name="reason"] +label,
+input[name="symptom"] +label{
+    font-family: Arial, Helvetica, sans-serif; 
+    font-weight: lighter;
+    color: rgb(0,0,0);
+}
+/*code for radio and checkbox options in add. details using ids*/
+#s1+label,#s2+label,#s3+label,#s4+label,#s5+label,
+#r1+label,#r2+label,#r3+label,#r4+label,#r5+label {
+    font-family: Arial, Helvetica, sans-serif; 
+    font-weight: lighter;
+    color: rgb(0,0,0);
+}
+/* slider adjustments */
+input[type="range"] {
+    width: 100%; 
+    height: 6px; 
+}
+/*aligning table row labels*/
+.td1 {
+    text-align: right;
+    padding-right: 5px;
+}
+/*changing input box size*/
+input[name="minitial"] {
+    width: 4%; 
+}
+/*moving the logo to the left*/
+img {
+    float: left;
+}
+/*adding padding to the tables*/
+.secondTable, .thirdTable, .fourthTable{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.fifthTable {
+    margin-left: auto;
+    margin-right: auto;
+  }
+/*aligning the sumbit button to the left*/
+input[name="submit"]{
+text-align: left;
+}
+
+/*aligning the date*/
+#date, #today{
+    text-align: right;
+    vertical-align:bottom;
+    color: rgb(198,73,63);
+}
+/*changing the color for radio buttons, check-boxes, and slider*/
+input[type="radio"],input[type="range"], input[type="checkbox"]{
+    accent-color: rgb(198,73,63);
+}
+/*code for errors*/
+.error {
+    color: blue;
+    font-size:small;
+    font-family: monospace;
+    font-weight: lighter;
+}
+/*output table styling*/
+table.output, tr.output, td.output 
+{
+    width: 40%;
+    background-color: rgb(255, 244, 240);
+    padding: 10px;
+    border-spacing: 10px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif; 
+    font-weight: lighter;
+    color: rgb(0,0,0);
+}
+/*individual output cell styling*/
+td.outputdata
+{
+    width: 20%;
+    background-color: rgb(195,193,194);
+    padding: 5px;
+    border-spacing: 5px;
+    
+}
