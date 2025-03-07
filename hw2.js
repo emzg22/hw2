@@ -27,7 +27,7 @@ function validateUname()
     uname = document.getElementById("uname").value.toLowerCase();
     document.getElementById("uname").value = uname;
 
-    let regex = /^[a-zA-Z0-9_-]+$/;//this allows the pattern to be refrenced later on in the if/else sequence
+    let regex = /^[a-zA-Z0-9_-]+$/;//this allows the pattern to be referenced later on in the if/else sequence
     if (uname.length == 0) //this gives in error if the username is blank
     {
         document.getElementById("unameError").innerHTML = 
@@ -56,7 +56,7 @@ function validateUname()
                  return false;
                 } 
                 else
-                    if (uname.length > 30) //this gives an error if the usernmae is over 30 characters
+                    if (uname.length > 30) //this gives an error if the username is over 30 characters
                     {
                      document.getElementById("unameError").innerHTML = 
                      "Your username must not exceed 30 characters";
@@ -169,7 +169,7 @@ function validateFname()
         if (!regex.test(fname)) //this gives an error if there are invalid characters for the first name
         {
             document.getElementById("fnameError").innerHTML = 
-            "Your first name can only include letters, apostrophes and dashes";
+            "Your first name can only include letters, apostrophes, and dashes";
             return false;
         } 
         else  
@@ -212,7 +212,7 @@ function validateLname()
         if (!regex.test(lname)) //this gives an error if there are invalid characters for the last name
         {
             document.getElementById("lnameError").innerHTML = 
-            "Your last name can only include letters, apostrophes and dashes";
+            "Your last name can only include letters, apostrophes, and dashes";
             return false;
         } 
         else  
@@ -254,7 +254,7 @@ function validatePhone()
 {   
     phone = document.getElementById("phone").value;
 
-    let regex = /^[()0-9-]+$/;//this allows the pattern to be refrenced later on in the if/else sequence
+    let regex = /^[()0-9-]+$/;//this allows the pattern to be referenced later on in the if/else sequence
     if (phone.length == 0) //this gives in error if the phone number is blank
     {
         document.getElementById("phoneError").innerHTML = 
